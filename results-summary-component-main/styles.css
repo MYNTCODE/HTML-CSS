@@ -1,0 +1,43 @@
+.circle {
+  background: linear-gradient(#401db2, #4734ef);
+}
+
+.left-side {
+  background: linear-gradient(#6743ff, #342eea);
+}
+.reaction {
+  background-color: #fff6f5;
+}
+.text-reaction {
+  color: hsl(0, 88%, 64%);
+}
+
+.memory {
+  background-color: #fffbf2;
+}
+
+.text-memory {
+  color: hsl(41, 100%, 50%);
+}
+
+.verbal {
+  background-color: #f2fbfa;
+}
+.text-verbal {
+  color: hsl(168, 91%, 39%);
+}
+
+.visual {
+  background-color: #f3f3fd;
+}
+.text-visual {
+  color: hsl(235, 90%, 41%);
+}
+
+.button {
+  background-color: #303b59;
+  color: #f2fbfa;
+}
+.left-side {
+  background-color: #303b59;
+}

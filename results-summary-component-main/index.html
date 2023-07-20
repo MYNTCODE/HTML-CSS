@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- box -->
+    <div class="body h-[100vh] flex  my-0 mx-auto justify-center items-center">
+
+<!-- section left -->
+    <div
+      class="Box  flex flex-row text-center items-center bg-white shadow-xl shadow-slate-300 rounded-3xl h-[400px] w-[600px] my-0 mx-auto "
+    >
+      <div class="left-side rounded-3xl text-white left-content w-[50%] h-[100%] p-[10px] flex flex-col items-center">
+        <h1 class=" p-[20px] text-[19px] font-medium text-gray-300">Your Result</h1>
+        <div class="circle  rounded-full m-[10px] h-[150px] w-[150px] flex flex-col justify-center ">
+        <p class="text-[50px] font-semibold">76</p>
+        <p class="text-[15px] text-gray-400">of 100</p>
+        </div>
+        <p class=" m-[5px] font-semibold text-[25px]">Great</p>
+        <p class="text-[13px] text-gray-300">
+          You scored higher than 65% of </br>the people who have taken </br>these tests.
+        </p>
+      </div>
+
+<!-- section right -->
+
+      <div class="right-content  p-[10px] w-[50%] h-[100%] flex flex-col">
+        <p class=" text-left font-bold text-[20px] m-3 mt-[25px] pl-2">Summary</p>
+        <div class=" p-[10px] pt-[0px] font-medium flex flex-col items-center  my-[5%] ">
+        <div class=" ">
+      
+          <div class="reaction rounded-lg h-[45px] w-[240px] pt-[1px] px-[10px]">
+          <div class="svg pt-[10px] absolute">
+          <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg>
+          </div>
+          <div class="flex flex-col justify-between pl-[25px] mt-[10px]">
+          <p class=" flex justify-between text-[14px]"><span class="text-reaction"> Reaction</span> <span >80 <span class="text-gray-500">/ 100</span></span></p></p>
+          </div>
+          </div>
+
+
+          <div class="memory mt-[10px] rounded-lg h-[45px] w-[240px] pt-[1px] px-[10px]">
+            <div class="svg pt-[10px] absolute">
+          <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>
+          </div>
+          <div class="flex flex-col justify-between pl-[25px] mt-[10px]">
+          <p class=" flex justify-between text-[14px]"><span class="text-memory">Memory</span> <span >92 <span class="text-gray-500">/ 100</span></span></p>
+          </div>
+          </div>
+          
+          <div class="verbal mt-[10px] rounded-lg h-[45px] w-[240px] pt-[1px] px-[10px]">
+            <div class="svg pt-[10px] absolute">
+          <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>
+          </div>
+          <div class=" flex flex-col justify-between pl-[25px] mt-[10px]">
+          <p class=" flex justify-between text-[14px]"><span class="text-verbal">Verbal</span> <span > 61 <span class="text-gray-500">/ 100</span></span></p>
+          </div>
+          </div>
+
+          <div class="visual mt-[10px] rounded-lg h-[45px] w-[240px] pt-[1px] px-[10px]">
+            <div class="svg pt-[10px] absolute">
+          <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>
+          </div>
+          <div class="flex flex-col justify-between pl-[25px] mt-[10px]">
+          <p class=" flex justify-between text-[14px]"><span class="text-visual">Visual</span> <span >72 <span class="text-gray-500">/ 100</span></span></p>
+          </div>
+          </div>
+
+
+        </div>
+        </div>
+
+        <div class="pt-[0px] m-[0px]">
+        <button><p class="button font-medium rounded-3xl border-[1px] h-[50px] w-[240px] pt-[10px] ">Continue</p></button>
+        </div>
+
+
+      </div>
+    </div>
+   
+    </div></div>
+<footer>
+     <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/MYNTCODE">MYNTCODE</a>.
+    </div>
+    </footer>
+  </body>
+</html>
